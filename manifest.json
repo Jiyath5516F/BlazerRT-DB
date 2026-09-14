@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "app": {
+    "id": "BlazerRT",
+    "name": "BlazerRT",
+    "version": "1.2.0",
+    "minAppVersion": "1.2.0",
+    "downloadUrl": "https://github.com/Jiyath5516F/BlazerRT-DB/releases"
+  },
+  "shaderPack": {
+    "name": "BlazerRT",
+    "version": "4.0.0",
+    "channel": "candidate"
+  },
+  "presets": [
+    {
+      "id": "blazerrt-v4-format25",
+      "name": "BlazerRT — Format 25",
+      "description": "Retail format 25 test candidate for Windows package 1.26.4501.0. Includes V4 live controls. In-game acceptance required.",
+      "materialFormatVersion": 25,
+      "formatRevision": "v25",
+      "gameDisplayVersion": "Retail 26.45 family",
+      "compatibilityNote": "Narrow candidate target, not blanket support for every v25 game build.",
+      "performanceLabel": "Test candidate",
+      "hardwareLabel": "RTX-capable GPU",
+      "accent": "75B9FF",
+      "image": "files/thumbnails/blazerrt.jpg",
+      "file": "files/blazerrt-v4-format25.zip",
+      "size": 6078056,
+      "sha256": "39de6b30bc58e0daed2d71cbf8ad810979baf2a56725486e2f1dbf1922bde05a",
+      "channel": "Retail",
+      "gameMinVersion": "1.26.4501.0",
+      "gameMaxVersion": "1.26.4501.0",
+      "targetFiles": [
+        { "name": "RTXStub.material.bin", "folder": "materials" },
+        { "name": "RTXPostFX.Bloom.material.bin", "folder": "materials" },
+        { "name": "RTXPostFX.Tonemapping.material.bin", "folder": "materials" },
+        { "name": "RTXControl.dll", "folder": "mods" },
+        { "name": "WINHTTP.dll", "folder": "loader" }
+      ]
+    },
+    {
+      "id": "blazerrt-v4-format26",
+      "name": "BlazerRT — Format 26 (original layout)",
+      "description": "Older Preview 26.50.27 test candidate with V4 live controls. NOT for Preview 26.60.22 or newer.",
+      "materialFormatVersion": 26,
+      "formatRevision": "v26-original-buffer-layout",
+      "gameDisplayVersion": "Preview 26.50.27",
+      "compatibilityNote": "Original v26 layout: 26.50.25–26.60.21 format family. This package is narrowly targeted, not certified across that whole family.",
+      "performanceLabel": "Release candidate",
+      "hardwareLabel": "RTX-capable GPU",
+      "accent": "75B9FF",
+      "image": "files/thumbnails/blazerrt.jpg",
+      "file": "files/blazerrt-v4-format26.zip",
+      "size": 6078065,
+      "sha256": "cb20685402f1435dc5038f90efaca6d71f3fc85dd38ac32d9abc9dbb14ae27c1",
+      "channel": "Preview",
+      "gameMinVersion": "1.26.5027.0",
+      "gameMaxVersion": "1.26.5027.0",
+      "targetFiles": [
+        {
+          "name": "RTXStub.material.bin",
+          "folder": "materials"
+        },
+        {
+          "name": "RTXPostFX.Bloom.material.bin",
+          "folder": "materials"
+        },
+        {
+          "name": "RTXPostFX.Tonemapping.material.bin",
+          "folder": "materials"
+        },
+        {
+          "name": "RTXControl.dll",
+          "folder": "mods"
+        },
+        {
+          "name": "WINHTTP.dll",
+          "folder": "loader"
+        }
+      ]
+    }
+  ],
+  "notifications": [
+    {
+      "id": "welcome-1",
+      "enabled": true,
+      "popup": false,
+      "title": "BlazerRT release candidate",
+      "message": "Install only on the exact game build listed on the package. Keep your backups.",
+      "level": "info"
+    },
+    {
+      "id": "popup-test-1",
+      "enabled": true,
+      "popup": true,
+      "title": "Notification test",
+      "message": "This text is controlled by manifest.json. Change the ID to show a new notice.",
+      "level": "info",
+      "minAppVersion": "1.2.0"
+    }
+  ]
+}
