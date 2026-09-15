@@ -3,13 +3,13 @@
   "app": {
     "id": "BlazerRT",
     "name": "BlazerRT",
-    "version": "1.2.0",
-    "minAppVersion": "1.2.0",
-    "downloadUrl": "https://github.com/Jiyath5516F/BlazerRT-DB/releases"
+    "version": "1.2.2",
+    "minAppVersion": "1.2.1",
+    "downloadUrl": "https://github.com/Jiyath5516F/BlazerRT-DB/releases/tag/v1.2.2"
   },
   "shaderPack": {
     "name": "BlazerRT",
-    "version": "4.0.0",
+    "version": "4.0.1",
     "channel": "candidate"
   },
   "presets": [
@@ -32,31 +32,48 @@
       "gameMinVersion": "1.26.4501.0",
       "gameMaxVersion": "1.26.4501.0",
       "targetFiles": [
-        { "name": "RTXStub.material.bin", "folder": "materials" },
-        { "name": "RTXPostFX.Bloom.material.bin", "folder": "materials" },
-        { "name": "RTXPostFX.Tonemapping.material.bin", "folder": "materials" },
-        { "name": "RTXControl.dll", "folder": "mods" },
-        { "name": "WINHTTP.dll", "folder": "loader" }
+        {
+          "name": "RTXStub.material.bin",
+          "folder": "materials"
+        },
+        {
+          "name": "RTXPostFX.Bloom.material.bin",
+          "folder": "materials"
+        },
+        {
+          "name": "RTXPostFX.Tonemapping.material.bin",
+          "folder": "materials"
+        },
+        {
+          "name": "RTXControl.dll",
+          "folder": "mods"
+        },
+        {
+          "name": "WINHTTP.dll",
+          "folder": "loader"
+        }
       ]
     },
     {
-      "id": "blazerrt-v4-format26",
-      "name": "BlazerRT — Format 26 (original layout)",
-      "description": "Older Preview 26.50.27 test candidate with V4 live controls. NOT for Preview 26.60.22 or newer.",
+      "id": "blazerrt-v4-preview-6022",
+      "name": "BlazerRT — Preview 26.60.22",
+      "description": "Fresh Lazurite 0.11.0 build for Preview 1.26.6022.0, using the current v26 buffer layout. Includes V4 live controls.",
       "materialFormatVersion": 26,
-      "formatRevision": "v26-original-buffer-layout",
-      "gameDisplayVersion": "Preview 26.50.27",
-      "compatibilityNote": "Original v26 layout: 26.50.25–26.60.21 format family. This package is narrowly targeted, not certified across that whole family.",
+      "formatRevision": "v26-changed-buffer-layout",
+      "gameDisplayVersion": "Preview 26.60.22",
+      "compatibilityNote": "Compiled against the saved Preview 1.26.6022.0 vanilla materials with Lazurite 0.11.0. In-game acceptance required; not for the old v26 layout.",
+      "lazuriteVersion": "0.11.0",
+      "validationReport": "validation/preview-1.26.6022.0.json",
       "performanceLabel": "Release candidate",
       "hardwareLabel": "RTX-capable GPU",
       "accent": "75B9FF",
       "image": "files/thumbnails/blazerrt.jpg",
-      "file": "files/blazerrt-v4-format26.zip",
-      "size": 6078065,
-      "sha256": "cb20685402f1435dc5038f90efaca6d71f3fc85dd38ac32d9abc9dbb14ae27c1",
+      "file": "files/blazerrt-v4-preview-1.26.6022.0.zip",
+      "size": 6076833,
+      "sha256": "4b528ce6f40241e73d53399d4692c96db4f72d7744566ea545a9ba9d1e44048f",
       "channel": "Preview",
-      "gameMinVersion": "1.26.5027.0",
-      "gameMaxVersion": "1.26.5027.0",
+      "gameMinVersion": "1.26.6022.0",
+      "gameMaxVersion": "1.26.6022.0",
       "targetFiles": [
         {
           "name": "RTXStub.material.bin",
@@ -91,11 +108,11 @@
       "level": "info"
     },
     {
-      "id": "popup-test-1",
+      "id": "preview-6022-ready-1",
       "enabled": true,
       "popup": true,
-      "title": "Notification test",
-      "message": "This text is controlled by manifest.json. Change the ID to show a new notice.",
+      "title": "Preview 26.60.22 build available",
+      "message": "The new v26 package was rebuilt with Lazurite 0.11.0. Select your matching Preview installation to install it. Keep your backup.",
       "level": "info",
       "minAppVersion": "1.2.0"
     }
