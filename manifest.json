@@ -3,9 +3,9 @@
   "app": {
     "id": "BlazerRT",
     "name": "BlazerRT",
-    "version": "1.2.2",
+    "version": "1.3.0",
     "minAppVersion": "1.2.1",
-    "downloadUrl": "https://github.com/Jiyath5516F/BlazerRT-DB/releases/tag/v1.2.2"
+    "downloadUrl": "https://github.com/Jiyath5516F/BlazerRT-DB/releases/tag/v1.3.0"
   },
   "shaderPack": {
     "name": "BlazerRT",
@@ -96,6 +96,49 @@
           "folder": "loader"
         }
       ]
+    },
+    {
+      "id": "blazerrt-v4-preview-6024",
+      "name": "BlazerRT — Preview 26.60.24",
+      "description": "Lazurite 0.11.0 build compiled from Preview 1.26.6024.0 materials. Includes V4 live controls.",
+      "materialFormatVersion": 26,
+      "formatRevision": "v26-changed-buffer-layout",
+      "gameDisplayVersion": "Preview 26.60.24",
+      "compatibilityNote": "Compiled against Preview 1.26.6024.0 vanilla materials. In-game acceptance required; not for older v26 layouts.",
+      "lazuriteVersion": "0.11.0",
+      "validationReport": "validation/preview-1.26.6024.0.json",
+      "performanceLabel": "Release candidate",
+      "hardwareLabel": "RTX-capable GPU",
+      "accent": "75B9FF",
+      "image": "files/thumbnails/blazerrt.jpg",
+      "file": "files/blazerrt-v4-preview-1.26.6024.0.zip",
+      "size": 6076834,
+      "sha256": "0606a7ba9420dfeba3c84ef3b37a80f1e997ac7c1b1e1cfb2d67209bc5a53dc1",
+      "channel": "Preview",
+      "gameMinVersion": "1.26.6024.0",
+      "gameMaxVersion": "1.26.6024.0",
+      "targetFiles": [
+        {
+          "name": "RTXStub.material.bin",
+          "folder": "materials"
+        },
+        {
+          "name": "RTXPostFX.Bloom.material.bin",
+          "folder": "materials"
+        },
+        {
+          "name": "RTXPostFX.Tonemapping.material.bin",
+          "folder": "materials"
+        },
+        {
+          "name": "RTXControl.dll",
+          "folder": "mods"
+        },
+        {
+          "name": "WINHTTP.dll",
+          "folder": "loader"
+        }
+      ]
     }
   ],
   "notifications": [
@@ -109,11 +152,20 @@
     },
     {
       "id": "preview-6022-ready-1",
-      "enabled": true,
-      "popup": true,
+      "enabled": false,
+      "popup": false,
       "title": "Preview 26.60.22 build available",
       "message": "The new v26 package was rebuilt with Lazurite 0.11.0. Select your matching Preview installation to install it. Keep your backup.",
       "level": "info",
+      "minAppVersion": "1.2.0"
+    },
+    {
+      "id": "preview-6024-ready-1",
+      "enabled": true,
+      "popup": true,
+      "title": "Preview 26.60.24 is supported",
+      "message": "A format 26 shader package was rebuilt from Preview 1.26.6024.0 materials with Lazurite 0.11.0.",
+      "level": "success",
       "minAppVersion": "1.2.0"
     }
   ]
