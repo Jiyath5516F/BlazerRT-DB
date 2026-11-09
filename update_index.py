@@ -17,6 +17,7 @@ Layout:
 import hashlib
 import json
 import re
+import struct
 import sys
 from pathlib import Path
 
@@ -66,6 +67,22 @@ def files_in(folder):
     return out
 
 
+MATERIAL_MAGIC = 168942106
+MATERIAL_ID = b"RenderDragon.CompiledMaterialDefinition"
+
+
+def material_format(path):
+    """The .material.bin format version (22, 23, 25, 26...), or None if it isn't one."""
+    with open(path, "rb") as f:
+        head = f.read(64)
+    if len(head) < 12:
+        return None
+    magic, n = struct.unpack_from("<QI", head)
+    if magic != MATERIAL_MAGIC or head[12:12 + n] != MATERIAL_ID or len(head) < 20 + n:
+        return None
+    return struct.unpack_from("<Q", head, 12 + n)[0]
+
+
 def need(info, where, *keys):
     ok = True
     for key in keys:
@@ -91,11 +108,18 @@ def build_entry(channel, folder):
             problem(where, f'pack "{pack.get("file")}" isn\'t in the folder')
     if not any(n.startswith("data/") for n in names):
         problem(where, "there's no data folder, so there's nothing to install")
+    # The shader file format the build was compiled for. The manager compares it with the
+    # game's own, and converts with Lazurite when they differ.
+    formats = {material_format(folder / n) for n in names if n.endswith(".material.bin")}
+    formats.discard(None)
+    if len(formats) > 1:
+        problem(where, f"its .material.bin files mix format versions {sorted(formats)}")
     entry = {
         "id": f"{channel}/{folder.name}",
         "version": info["version"],
         "edition": info["edition"],
         "game": info["game"],
+        "format": formats.pop() if len(formats) == 1 else None,
         "date": info.get("date", ""),
         "notes": info.get("notes", ""),
         "path": where,
