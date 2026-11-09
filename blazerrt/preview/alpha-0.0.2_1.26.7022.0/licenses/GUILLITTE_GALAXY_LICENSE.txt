@@ -1,0 +1,31 @@
+End-sky galaxy - third-party shader notice
+
+Work:     galaxy morphology (renderGalaxy, map, arm and FBM functions)
+Author:   S. Guillitte
+Source:   the galaxy section of the user-supplied Blazer Dev End shader
+          (Blazer Dev/shaders/End/programs/deferred/Deferred11.frag and
+          Blazer Dev/shaders/End/libs/Galaxy.glsl), which identifies
+          S. Guillitte as its creator and states the licence below
+Licence:  Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported
+          (CC BY-NC-SA 3.0)
+          https://creativecommons.org/licenses/by-nc-sa/3.0/
+          Legal code: https://creativecommons.org/licenses/by-nc-sa/3.0/legalcode
+
+Adapted file in this pack:
+  RTXStub/shaders/Include/SeraphicRT/BlazerEndSky.hlsl
+  (used for every End-sky lookup through RTHelpers.hlsl seraphicEndSkyColour)
+
+The original GLSL was ported to HLSL (Shader Model 6.5) and modified for the
+SeraphicRT Minecraft RTX End sky:
+  - GLSL-to-HLSL matrix orientation;
+  - guarded reciprocal and power operations;
+  - shared disk/dust samples;
+  - bounded HDR (scene-linear) output;
+  - a stereographic upper-sky projection;
+  - stable star brightness and wrapped spherical star cells.
+The original Java shaderpack was not edited.
+
+This adaptation is distributed under the same licence (CC BY-NC-SA 3.0). It
+may not be used for commercial purposes. This notice concerns the adapted
+galaxy only; it does not relicense unrelated files of the pack. No endorsement
+by the original author is implied.

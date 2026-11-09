@@ -1,0 +1,69 @@
+BlazerRT alpha 0.0.2
+For Minecraft for Windows 1.26.6301.0, with ray tracing.
+This package only fits that exact version. The other Minecraft edition has its own zip.
+
+
+INSTALL
+
+1. Close Minecraft.
+
+2. Open the game folder. In the Xbox app, go to Minecraft for Windows, click the three dots,
+   then Manage > Files > Browse. You want the folder that has a "data" folder
+   in it, usually ...\XboxGames\Minecraft for Windows\Content.
+
+3. Back up these files from it, so you can go back later:
+     data\renderer\materials\RTXStub.material.bin
+     data\renderer\materials\RTXPostFX.Tonemapping.material.bin
+     data\renderer\materials\RTXPostFX.Bloom.material.bin
+     data\renderer\materials\Stars.material.bin
+     data\renderer\materials\StarsForwardPBR.material.bin
+     data\ray_tracing\caustics.png
+
+4. Copy the "data" folder from this zip into the game folder and replace the
+   files when Windows asks.
+
+5. Double-click resource_packs\BlazerRT Rain Off.mcpack. In Minecraft, open
+   Settings > Global Resources, turn on BlazerRT Rain Off and keep it at the top,
+   above your RTX resource pack. Without it you get Minecraft's own rain on top
+   of BlazerRT's.
+
+6. Use an RTX resource pack and turn on ray tracing in Settings > Video.
+
+The first start after installing can take a few minutes while Minecraft builds
+the shaders. Windows may say "Not Responding" for a while. Let it run.
+
+
+LIVE SETTINGS (OPTIONAL)
+
+The BlazerRT Live Settings Controller is the in-game settings panel (F6). It's
+the new name for RTXControl. It needs a mod loader in the game folder, the same
+one RTXControl used.
+
+1. Copy everything in this zip's "mods" folder into the game's "mods" folder.
+2. If you had RTXControl, delete or move RTXControl.dll out of the mods folder,
+   so the two don't run at the same time. Your RTXControl settings are copied
+   over the first time the controller starts.
+
+Without the controller BlazerRT runs on its built-in settings.
+
+
+AFTER A MINECRAFT UPDATE
+
+Updates put the game's own files back, so copy the "data" folder in again.
+If the version number changed, check that there's a BlazerRT build for it first.
+
+
+UNINSTALL
+
+Put your backed-up files back, or in the Xbox app use Manage > Files >
+Verify and repair.
+
+
+GOOD TO KNOW
+
+- The realistic clouds need data\ray_tracing\caustics.png. Without it you get
+  Minecraft's blocky clouds.
+- Want PBR on mobs, items and held blocks from your own pack? Get BlazerBake
+  and follow its tutorial.
+- The aurora and the End galaxy are under a NonCommercial licence (see the
+  licenses folder), so BlazerRT can't be sold or put behind a paywall.

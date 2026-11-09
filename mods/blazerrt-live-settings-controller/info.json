@@ -1,0 +1,10 @@
+{
+  "name": "BlazerRT Live Settings Controller",
+  "version": "alpha 0.0.2",
+  "author": "0x",
+  "description": "The F6 settings panel for BlazerRT. 233 live settings, presets from Potato to Cinematic, saved profiles. Takes over from RTXControl and brings its settings along.",
+  "editions": ["release", "preview"],
+  "games": ["1.26.6301.0", "1.26.7022.0"],
+  "install": "loose",
+  "replaces": ["RTXControl"]
+}

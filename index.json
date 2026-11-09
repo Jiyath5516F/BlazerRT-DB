@@ -1,0 +1,354 @@
+{
+  "schema": 1,
+  "raw": "https://raw.githubusercontent.com/Jiyath5516F/BlazerRT-DB/main/",
+  "browse": "https://github.com/Jiyath5516F/BlazerRT-DB/tree/main/",
+  "channels": [
+    {
+      "id": "release",
+      "name": "Release",
+      "note": "Tested builds for the Minecraft you get from the Store.",
+      "builds": [
+        {
+          "id": "release/alpha-0.0.2_1.26.6301.0",
+          "version": "alpha 0.0.2",
+          "edition": "release",
+          "game": "1.26.6301.0",
+          "date": "2026-11-06",
+          "notes": "For Minecraft 1.26.6301.0. All five shader files, the star files, the cloud atlas and the live settings controller.",
+          "path": "blazerrt/release/alpha-0.0.2_1.26.6301.0",
+          "packs": [
+            {
+              "file": "resource_packs/Support Reource Pack for BlazerRT.mcpack",
+              "label": "Support pack",
+              "note": "PBR for every vanilla block, item and mob. Works on its own, no other RTX pack needed.",
+              "default": true
+            },
+            {
+              "file": "resource_packs/BlazerRT Rain Off - Use this when Support RP is not used.mcpack",
+              "label": "Rain Off only",
+              "note": "For when you use your own RTX pack. Hides Minecraft's rain so BlazerRT's shows."
+            }
+          ],
+          "replaces": [
+            "RTXControl"
+          ],
+          "files": [
+            {
+              "path": "CHANGELOG.md",
+              "size": 7282,
+              "sha256": "aeb9fb1c869e1643571d13a86ecbf999b9dae456ccf16b0fa11b8defa2e56353"
+            },
+            {
+              "path": "data/ray_tracing/caustics.png",
+              "size": 3387455,
+              "sha256": "fbdad9453902bbb14d342995216d70d09970b0fe7402602612e79fde7448188b"
+            },
+            {
+              "path": "data/renderer/materials/RTXPostFX.Bloom.material.bin",
+              "size": 62356,
+              "sha256": "266b8707057882231942feab565b343ed22a3c8453a263beee5b1201c1dd5897"
+            },
+            {
+              "path": "data/renderer/materials/RTXPostFX.Tonemapping.material.bin",
+              "size": 207822,
+              "sha256": "6d772a3541bca58222df15bba4e6903a991bcc17aac33c6aec34fd61f60d0dfb"
+            },
+            {
+              "path": "data/renderer/materials/RTXStub.material.bin",
+              "size": 8444208,
+              "sha256": "4144113c62270661df766b1b72e17102c7792467b9d2baa91c35ea0eb08eb20a"
+            },
+            {
+              "path": "data/renderer/materials/Stars.material.bin",
+              "size": 38132,
+              "sha256": "702bb25d9e3664256b0598849a2b35d24d97a319d7036bf39ef5b19ea0073da5"
+            },
+            {
+              "path": "data/renderer/materials/StarsForwardPBR.material.bin",
+              "size": 85360,
+              "sha256": "b2afe4ce155ede72ee764452824e685801f4660aa50ee9f0ec2a3f5ca3db7098"
+            },
+            {
+              "path": "hashes.json",
+              "size": 2790,
+              "sha256": "1d5367d9f393a06cddccb70314370b1b1779f1a4fb34f056426783edb40275cf"
+            },
+            {
+              "path": "INSTALL.txt",
+              "size": 2676,
+              "sha256": "c416acb7bcbf04f8c6c2a2a2fa7f81e25575c4e95ab3c38c7737274b2685d7b2"
+            },
+            {
+              "path": "licenses/GUILLITTE_GALAXY_LICENSE.txt",
+              "size": 1503,
+              "sha256": "19cf48ff182ecb065a631b13cbe44c9963c97a2cbfb84edf329c28760beb3467"
+            },
+            {
+              "path": "licenses/NIMITZ_AURORAS_LICENSE.txt",
+              "size": 1627,
+              "sha256": "9520c8afaf79ea52e32e9db2fd7718a8f67707dd53d952ac903549a43ed9e131"
+            },
+            {
+              "path": "licenses/TAKRAM_CLOUDS_LICENSE.txt",
+              "size": 1170,
+              "sha256": "865a658f8e62b3462f0e506f396523630eaef48194ee3c82f7a777027a0112a0"
+            },
+            {
+              "path": "licenses/TAKRAM_EFFECTS_LICENSE.txt",
+              "size": 1170,
+              "sha256": "865a658f8e62b3462f0e506f396523630eaef48194ee3c82f7a777027a0112a0"
+            },
+            {
+              "path": "mods/BlazerRT Live Settings Controller.dll",
+              "size": 1149440,
+              "sha256": "9ff3c8c9f984cad7bf8a82b69c479d680f12b458e04e3656958e873a9ee9353b"
+            },
+            {
+              "path": "resource_packs/BlazerRT Rain Off - Use this when Support RP is not used.mcpack",
+              "size": 1067,
+              "sha256": "706409f19039d48c6e0fb1a3ffccad17b24d3f0c2593dd0bdb09267861a06c83"
+            },
+            {
+              "path": "resource_packs/Support Reource Pack for BlazerRT.mcpack",
+              "size": 7028629,
+              "sha256": "dd49053b45bc9d03554b442afb4d6f1608aa741865b0b1c60b6cdc69f9105fbe"
+            },
+            {
+              "path": "WINHTTP.dll",
+              "size": 252928,
+              "sha256": "dee840e6931637e887c7dbcae7828a1a6657d5becd5259abd3f17503fa182765"
+            }
+          ],
+          "changelog": "CHANGELOG.md"
+        }
+      ]
+    },
+    {
+      "id": "preview",
+      "name": "Preview",
+      "note": "Builds for Minecraft Preview. Preview updates often, so these move fast.",
+      "builds": [
+        {
+          "id": "preview/alpha-0.0.2_1.26.7022.0",
+          "version": "alpha 0.0.2",
+          "edition": "preview",
+          "game": "1.26.7022.0",
+          "date": "2026-11-06",
+          "notes": "For Minecraft Preview 1.26.7022.0. All five shader files, the star files, the cloud atlas and the live settings controller.",
+          "path": "blazerrt/preview/alpha-0.0.2_1.26.7022.0",
+          "packs": [
+            {
+              "file": "resource_packs/Support Reource Pack for BlazerRT.mcpack",
+              "label": "Support pack",
+              "note": "PBR for every vanilla block, item and mob. Works on its own, no other RTX pack needed.",
+              "default": true
+            },
+            {
+              "file": "resource_packs/BlazerRT Rain Off - Use this when Support RP is not used.mcpack",
+              "label": "Rain Off only",
+              "note": "For when you use your own RTX pack. Hides Minecraft's rain so BlazerRT's shows."
+            }
+          ],
+          "replaces": [
+            "RTXControl"
+          ],
+          "files": [
+            {
+              "path": "data/ray_tracing/caustics.png",
+              "size": 3387455,
+              "sha256": "fbdad9453902bbb14d342995216d70d09970b0fe7402602612e79fde7448188b"
+            },
+            {
+              "path": "data/renderer/materials/RTXPostFX.Bloom.material.bin",
+              "size": 62356,
+              "sha256": "266b8707057882231942feab565b343ed22a3c8453a263beee5b1201c1dd5897"
+            },
+            {
+              "path": "data/renderer/materials/RTXPostFX.Tonemapping.material.bin",
+              "size": 207822,
+              "sha256": "6d772a3541bca58222df15bba4e6903a991bcc17aac33c6aec34fd61f60d0dfb"
+            },
+            {
+              "path": "data/renderer/materials/RTXStub.material.bin",
+              "size": 8444208,
+              "sha256": "4144113c62270661df766b1b72e17102c7792467b9d2baa91c35ea0eb08eb20a"
+            },
+            {
+              "path": "data/renderer/materials/Stars.material.bin",
+              "size": 38132,
+              "sha256": "555f090ad12f6061325cb3977ff2640c16d04f9ede1982acf814ac08ea9f62df"
+            },
+            {
+              "path": "data/renderer/materials/StarsForwardPBR.material.bin",
+              "size": 85346,
+              "sha256": "cb58cd1e4d16f31a086c136ed7f04184705ed9a5d63dfff939e26903e81791d6"
+            },
+            {
+              "path": "hashes.json",
+              "size": 2798,
+              "sha256": "179ded9e5cbb9dbdd24fae0bcc740d7992b76ac52b144a16da0952e7bbdec9d8"
+            },
+            {
+              "path": "INSTALL.txt",
+              "size": 2700,
+              "sha256": "7ba50333b6028dddffb0b343ed2bf3909f7068f13e543f4516117acba9c7b1ca"
+            },
+            {
+              "path": "licenses/GUILLITTE_GALAXY_LICENSE.txt",
+              "size": 1503,
+              "sha256": "19cf48ff182ecb065a631b13cbe44c9963c97a2cbfb84edf329c28760beb3467"
+            },
+            {
+              "path": "licenses/NIMITZ_AURORAS_LICENSE.txt",
+              "size": 1627,
+              "sha256": "9520c8afaf79ea52e32e9db2fd7718a8f67707dd53d952ac903549a43ed9e131"
+            },
+            {
+              "path": "licenses/TAKRAM_CLOUDS_LICENSE.txt",
+              "size": 1170,
+              "sha256": "865a658f8e62b3462f0e506f396523630eaef48194ee3c82f7a777027a0112a0"
+            },
+            {
+              "path": "licenses/TAKRAM_EFFECTS_LICENSE.txt",
+              "size": 1170,
+              "sha256": "865a658f8e62b3462f0e506f396523630eaef48194ee3c82f7a777027a0112a0"
+            },
+            {
+              "path": "mods/BlazerRT Live Settings Controller.dll",
+              "size": 1149440,
+              "sha256": "9ff3c8c9f984cad7bf8a82b69c479d680f12b458e04e3656958e873a9ee9353b"
+            },
+            {
+              "path": "mods/THIRD-PARTY-NOTICES.txt",
+              "size": 11666,
+              "sha256": "b1d658dc719e2bba84afa176e213a5d6ad9674ab13aafb36a56ce2eb240067b7"
+            },
+            {
+              "path": "resource_packs/BlazerRT Rain Off - Use this when Support RP is not used.mcpack",
+              "size": 1067,
+              "sha256": "706409f19039d48c6e0fb1a3ffccad17b24d3f0c2593dd0bdb09267861a06c83"
+            },
+            {
+              "path": "resource_packs/Support Reource Pack for BlazerRT.mcpack",
+              "size": 7028629,
+              "sha256": "dd49053b45bc9d03554b442afb4d6f1608aa741865b0b1c60b6cdc69f9105fbe"
+            },
+            {
+              "path": "WINHTTP.dll",
+              "size": 252928,
+              "sha256": "dee840e6931637e887c7dbcae7828a1a6657d5becd5259abd3f17503fa182765"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dev",
+      "name": "Dev Channel",
+      "note": "Work in progress. Expect things to break.",
+      "builds": []
+    }
+  ],
+  "mods": [
+    {
+      "id": "blazerrt-live-settings-controller",
+      "name": "BlazerRT Live Settings Controller",
+      "version": "alpha 0.0.2",
+      "author": "0x",
+      "description": "The F6 settings panel for BlazerRT. 233 live settings, presets from Potato to Cinematic, saved profiles. Takes over from RTXControl and brings its settings along.",
+      "editions": [
+        "release",
+        "preview"
+      ],
+      "games": [
+        "1.26.6301.0",
+        "1.26.7022.0"
+      ],
+      "install": "loose",
+      "replaces": [
+        "RTXControl"
+      ],
+      "path": "mods/blazerrt-live-settings-controller",
+      "files": [
+        {
+          "path": "BlazerRT Live Settings Controller.dll",
+          "size": 1149440,
+          "sha256": "9ff3c8c9f984cad7bf8a82b69c479d680f12b458e04e3656958e873a9ee9353b"
+        },
+        {
+          "path": "THIRD-PARTY-NOTICES.txt",
+          "size": 11666,
+          "sha256": "b1d658dc719e2bba84afa176e213a5d6ad9674ab13aafb36a56ce2eb240067b7"
+        }
+      ]
+    }
+  ],
+  "tools": [
+    {
+      "id": "blazerbake",
+      "name": "BlazerBake",
+      "version": "alpha 0.0.2",
+      "date": "2026-11-06",
+      "description": "Bakes mob, item and held-block PBR from your texture sets into your own resource pack. Check first, bake with a backup, clear it again any time.",
+      "icon": "wrench-01",
+      "path": "tools/blazerbake",
+      "files": [
+        {
+          "path": "blazerbake.exe",
+          "size": 28383696,
+          "sha256": "006baefb13fe651c5df90bd995d88748565466463d5af48ff3867be34ff67653"
+        },
+        {
+          "path": "CHANGELOG.md",
+          "size": 1134,
+          "sha256": "3ebb5c1dffa05355c54c7343c7f24059f73b931443136b56fff866ea197cb860"
+        },
+        {
+          "path": "images/01-pack.png",
+          "size": 56434,
+          "sha256": "c89c2492b229a979a984e09136e98b4740279e8768aa4e8c79400a0ca6e44d8c"
+        },
+        {
+          "path": "images/02-open-cmd.png",
+          "size": 23662,
+          "sha256": "e38f46c168d751723b6be68ccab46b38deb25cfe6e14667712b7e856a129d0ac"
+        },
+        {
+          "path": "images/03-check.png",
+          "size": 45842,
+          "sha256": "6a5d9de87afab1855a44d22fe9fb175208ee4f7c47fce392e27eaae9d482f8ed"
+        },
+        {
+          "path": "images/04-bake.png",
+          "size": 52848,
+          "sha256": "2d335169f411373d021267ad9ecf1f520aff876a2f7f75bb5bc60d58a7968818"
+        },
+        {
+          "path": "images/05-in-game.webp",
+          "size": 910356,
+          "sha256": "36b41d7d6893d9d9128d58d9251dafbe86e3145199cd1277340efc80e1de687b"
+        },
+        {
+          "path": "images/06-clear.png",
+          "size": 35003,
+          "sha256": "94f3663a57b20a5ba5fab812e1d462476e4a4b270779dcb9f5aa6eb73e576a42"
+        },
+        {
+          "path": "images/07-clear-no-backup.png",
+          "size": 37428,
+          "sha256": "ad43fa90680618697bcf5e665b47e7a0ef95c11c833a0a09ec8fb0078034b7ae"
+        },
+        {
+          "path": "THIRD-PARTY-NOTICES.txt",
+          "size": 193893,
+          "sha256": "6ad58a3323c7a40e7481b9a830e14884cc7414c0e868a8776574be6dfc7defca"
+        },
+        {
+          "path": "tutorial.html",
+          "size": 37268,
+          "sha256": "06ec62705d89e393f33662bda1e0ef47d1d572f95822a9c58159dd9dc88d95c5"
+        }
+      ]
+    }
+  ]
+}

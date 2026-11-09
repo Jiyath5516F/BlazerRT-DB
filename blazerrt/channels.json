@@ -1,0 +1,5 @@
+[
+  { "id": "release", "name": "Release", "note": "Tested builds for the Minecraft you get from the Store." },
+  { "id": "preview", "name": "Preview", "note": "Builds for Minecraft Preview. Preview updates often, so these move fast." },
+  { "id": "dev", "name": "Dev Channel", "note": "Work in progress. Expect things to break." }
+]

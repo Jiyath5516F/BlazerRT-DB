@@ -1,0 +1,7 @@
+{
+  "name": "BlazerBake",
+  "version": "alpha 0.0.2",
+  "date": "2026-11-06",
+  "description": "Bakes mob, item and held-block PBR from your texture sets into your own resource pack. Check first, bake with a backup, clear it again any time.",
+  "icon": "wrench-01"
+}

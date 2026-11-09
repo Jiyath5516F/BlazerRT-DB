@@ -1,0 +1,32 @@
+Auroras - third-party shader notice
+
+Work:     "Auroras"
+Author:   nimitz (twitter: @stormoid)
+Source:   https://www.shadertoy.com/view/XtGGRt
+Licence:  Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported
+          (CC BY-NC-SA 3.0)
+          https://creativecommons.org/licenses/by-nc-sa/3.0/
+          Legal code: https://creativecommons.org/licenses/by-nc-sa/3.0/legalcode
+
+Adapted file in this pack:
+  RTXStub/shaders/Include/SeraphicRT/Aurora.hlsli
+
+The original GLSL was ported to HLSL (Shader Model 6.5) and modified for the
+SeraphicRT Minecraft RTX sky:
+  - step count: the 50-layer march is sampled with a configurable number of
+    stratified layers (SERAPHIC_AURORA_STEPS) whose index, colour progression
+    and accumulation weights are remapped to the 50-layer integral;
+  - jitter: the per-pixel gl_FragCoord hash was replaced by interleaved-gradient
+    noise on a direction-stable pixel grid with a golden-ratio frame offset,
+    resolved by temporal anti-aliasing;
+  - HDR scaling: the display-referred output is converted to scene-linear
+    radiance calibrated to the game's night exposure and tone mapper, with a
+    visibility control (SERAPHIC_AURORA_VISIBILITY);
+  - sky integration: evaluated as night-sky emission in the physical sky
+    (night, rain and horizon gates, atmospheric transmittance, veiling the
+    stars, hidden by clouds); the original background, star field and water
+    reflection code are not used.
+
+This adaptation is distributed under the same licence (CC BY-NC-SA 3.0). It
+may not be used for commercial purposes. No endorsement by the original author
+is implied.

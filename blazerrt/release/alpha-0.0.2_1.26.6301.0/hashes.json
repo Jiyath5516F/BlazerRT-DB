@@ -1,0 +1,81 @@
+{
+  "release": "BlazerRT alpha 0.0.2",
+  "minecraft": "Minecraft for Windows 1.26.6301.0 (release)",
+  "files": [
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 7282,
+      "sha256": "aeb9fb1c869e1643571d13a86ecbf999b9dae456ccf16b0fa11b8defa2e56353"
+    },
+    {
+      "path": "data/ray_tracing/caustics.png",
+      "bytes": 3387455,
+      "sha256": "fbdad9453902bbb14d342995216d70d09970b0fe7402602612e79fde7448188b"
+    },
+    {
+      "path": "data/renderer/materials/RTXPostFX.Bloom.material.bin",
+      "bytes": 62356,
+      "sha256": "266b8707057882231942feab565b343ed22a3c8453a263beee5b1201c1dd5897"
+    },
+    {
+      "path": "data/renderer/materials/RTXPostFX.Tonemapping.material.bin",
+      "bytes": 207822,
+      "sha256": "6d772a3541bca58222df15bba4e6903a991bcc17aac33c6aec34fd61f60d0dfb"
+    },
+    {
+      "path": "data/renderer/materials/RTXStub.material.bin",
+      "bytes": 8444208,
+      "sha256": "4144113c62270661df766b1b72e17102c7792467b9d2baa91c35ea0eb08eb20a"
+    },
+    {
+      "path": "data/renderer/materials/Stars.material.bin",
+      "bytes": 38132,
+      "sha256": "702bb25d9e3664256b0598849a2b35d24d97a319d7036bf39ef5b19ea0073da5"
+    },
+    {
+      "path": "data/renderer/materials/StarsForwardPBR.material.bin",
+      "bytes": 85360,
+      "sha256": "b2afe4ce155ede72ee764452824e685801f4660aa50ee9f0ec2a3f5ca3db7098"
+    },
+    {
+      "path": "INSTALL.txt",
+      "bytes": 2676,
+      "sha256": "c416acb7bcbf04f8c6c2a2a2fa7f81e25575c4e95ab3c38c7737274b2685d7b2"
+    },
+    {
+      "path": "licenses/GUILLITTE_GALAXY_LICENSE.txt",
+      "bytes": 1503,
+      "sha256": "19cf48ff182ecb065a631b13cbe44c9963c97a2cbfb84edf329c28760beb3467"
+    },
+    {
+      "path": "licenses/NIMITZ_AURORAS_LICENSE.txt",
+      "bytes": 1627,
+      "sha256": "9520c8afaf79ea52e32e9db2fd7718a8f67707dd53d952ac903549a43ed9e131"
+    },
+    {
+      "path": "licenses/TAKRAM_CLOUDS_LICENSE.txt",
+      "bytes": 1170,
+      "sha256": "865a658f8e62b3462f0e506f396523630eaef48194ee3c82f7a777027a0112a0"
+    },
+    {
+      "path": "licenses/TAKRAM_EFFECTS_LICENSE.txt",
+      "bytes": 1170,
+      "sha256": "865a658f8e62b3462f0e506f396523630eaef48194ee3c82f7a777027a0112a0"
+    },
+    {
+      "path": "mods/BlazerRT Live Settings Controller.dll",
+      "bytes": 1149440,
+      "sha256": "9ff3c8c9f984cad7bf8a82b69c479d680f12b458e04e3656958e873a9ee9353b"
+    },
+    {
+      "path": "mods/THIRD-PARTY-NOTICES.txt",
+      "bytes": 11666,
+      "sha256": "b1d658dc719e2bba84afa176e213a5d6ad9674ab13aafb36a56ce2eb240067b7"
+    },
+    {
+      "path": "resource_packs/BlazerRT Rain Off.mcpack",
+      "bytes": 1067,
+      "sha256": "706409f19039d48c6e0fb1a3ffccad17b24d3f0c2593dd0bdb09267861a06c83"
+    }
+  ]
+}
