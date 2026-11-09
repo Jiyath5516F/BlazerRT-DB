@@ -41,8 +41,8 @@
           "files": [
             {
               "path": "CHANGELOG.md",
-              "size": 7282,
-              "sha256": "aeb9fb1c869e1643571d13a86ecbf999b9dae456ccf16b0fa11b8defa2e56353"
+              "size": 5743,
+              "sha256": "e5ca7e37cc0d0aba5146698420d19cbd976f29197c45860260f5d25e6337a32a"
             },
             {
               "path": "data/ray_tracing/caustics.png",
@@ -77,7 +77,7 @@
             {
               "path": "hashes.json",
               "size": 3528,
-              "sha256": "176f4d24b19a5e86558ad62a8cc54ef2cb39a17b00a778902b5f0c4e6d2b5ed3"
+              "sha256": "143edf7bb15849afd1a047eddb897176ec7acf281bb050a4cb11744e6a93632f"
             },
             {
               "path": "INSTALL.txt",

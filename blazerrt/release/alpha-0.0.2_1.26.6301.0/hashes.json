@@ -4,8 +4,8 @@
   "files": [
     {
       "path": "CHANGELOG.md",
-      "bytes": 7282,
-      "sha256": "aeb9fb1c869e1643571d13a86ecbf999b9dae456ccf16b0fa11b8defa2e56353"
+      "bytes": 5743,
+      "sha256": "e5ca7e37cc0d0aba5146698420d19cbd976f29197c45860260f5d25e6337a32a"
     },
     {
       "path": "data/ray_tracing/caustics.png",

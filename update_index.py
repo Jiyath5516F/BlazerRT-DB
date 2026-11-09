@@ -83,6 +83,23 @@ def material_format(path):
     return struct.unpack_from("<Q", head, 12 + n)[0]
 
 
+def refresh_hashes(folder):
+    """Keeps a build's own hashes.json (the list for people installing by hand) in step with
+    its files, so a changelog edited on GitHub can't leave it behind."""
+    path = folder / "hashes.json"
+    if not path.is_file():
+        return
+    data = json.loads(path.read_text(encoding="utf-8-sig"))
+    listed = []
+    for f in sorted(folder.rglob("*"), key=lambda p: p.relative_to(folder).as_posix().lower()):
+        rel = f.relative_to(folder).as_posix()
+        if f.is_file() and rel not in ("hashes.json", "info.json"):
+            listed.append({"path": rel, "bytes": f.stat().st_size, "sha256": sha256(f)})
+    if data.get("files") != listed:
+        data["files"] = listed
+        path.write_text(json.dumps(data, indent=2) + "\n", encoding="utf-8", newline="\n")
+
+
 def need(info, where, *keys):
     ok = True
     for key in keys:
@@ -101,6 +118,7 @@ def build_entry(channel, folder):
         problem(where, f'"edition" has to be one of {", ".join(EDITIONS)}')
     if not GAME.match(info["game"]):
         problem(where, '"game" should look like 1.26.6301.0')
+    refresh_hashes(folder)
     files = files_in(folder)
     names = {f["path"] for f in files}
     for pack in info.get("packs", []):

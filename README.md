@@ -24,6 +24,8 @@ Every build, mod and tool folder has an `info.json` with the stuff a person has 
 
 The Dev Channel is empty for now. A build goes in `blazerrt/dev/<build>/` the same way.
 
+Edited something on GitHub's website, like a changelog? Pull, run `python update_index.py`, push. Every file's hash is in `index.json`, and the manager won't install a file whose hash doesn't match, so an edit without that step leaves the file stuck. The script also keeps each build's `hashes.json` up to date.
+
 ## What the manager does with a build
 
 - `data/` goes into the game's `Content` folder, after the files it replaces are backed up.
