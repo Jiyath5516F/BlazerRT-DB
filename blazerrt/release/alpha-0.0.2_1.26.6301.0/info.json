@@ -6,7 +6,7 @@
   "notes": "For Minecraft 1.26.6301.0. All five shader files, the star files, the cloud atlas and the live settings controller.",
   "packs": [
     {
-      "file": "resource_packs/Support Reource Pack for BlazerRT.mcpack",
+      "file": "resource_packs/Support Resource Pack for BlazerRT.mcpack",
       "label": "Support pack",
       "note": "PBR for every vanilla block, item and mob. Works on its own, no other RTX pack needed.",
       "default": true
@@ -17,5 +17,7 @@
       "note": "For when you use your own RTX pack. Hides Minecraft's rain so BlazerRT's shows."
     }
   ],
-  "replaces": ["RTXControl"]
+  "replaces": [
+    "RTXControl"
+  ]
 }

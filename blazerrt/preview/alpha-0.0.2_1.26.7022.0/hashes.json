@@ -3,11 +3,6 @@
   "minecraft": "Minecraft Preview for Windows 1.26.7022.0 (preview)",
   "files": [
     {
-      "path": "CHANGELOG.md",
-      "bytes": 7282,
-      "sha256": "aeb9fb1c869e1643571d13a86ecbf999b9dae456ccf16b0fa11b8defa2e56353"
-    },
-    {
       "path": "data/ray_tracing/caustics.png",
       "bytes": 3387455,
       "sha256": "fbdad9453902bbb14d342995216d70d09970b0fe7402602612e79fde7448188b"
@@ -63,19 +58,39 @@
       "sha256": "865a658f8e62b3462f0e506f396523630eaef48194ee3c82f7a777027a0112a0"
     },
     {
-      "path": "mods/BlazerRT Live Settings Controller.dll",
+      "path": "mods/BlazerRT Live Settings Controller/BlazerRT Live Settings Controller.dll",
       "bytes": 1149440,
       "sha256": "9ff3c8c9f984cad7bf8a82b69c479d680f12b458e04e3656958e873a9ee9353b"
     },
     {
-      "path": "mods/THIRD-PARTY-NOTICES.txt",
+      "path": "mods/BlazerRT Live Settings Controller/icon.png",
+      "bytes": 258908,
+      "sha256": "6f282c7af1322e289febe441cb76a5a2c2663eca9211dc5b82a69b59a1b4dc55"
+    },
+    {
+      "path": "mods/BlazerRT Live Settings Controller/manifest.json",
+      "bytes": 446,
+      "sha256": "0b5bc643d7d6afec426fa4c1a3b167e4ec8b2a4b945b60abc356813aefeed228"
+    },
+    {
+      "path": "mods/BlazerRT Live Settings Controller/THIRD-PARTY-NOTICES.txt",
       "bytes": 11666,
       "sha256": "b1d658dc719e2bba84afa176e213a5d6ad9674ab13aafb36a56ce2eb240067b7"
     },
     {
-      "path": "resource_packs/BlazerRT Rain Off.mcpack",
+      "path": "resource_packs/BlazerRT Rain Off - Use this when Support RP is not used.mcpack",
       "bytes": 1067,
       "sha256": "706409f19039d48c6e0fb1a3ffccad17b24d3f0c2593dd0bdb09267861a06c83"
+    },
+    {
+      "path": "resource_packs/Support Resource Pack for BlazerRT.mcpack",
+      "bytes": 7010598,
+      "sha256": "1d874171531868b939f811e18144e35eeb67fd9b387fb2e99970648fda077b1e"
+    },
+    {
+      "path": "WINHTTP.dll",
+      "bytes": 252928,
+      "sha256": "dee840e6931637e887c7dbcae7828a1a6657d5becd5259abd3f17503fa182765"
     }
   ]
 }

@@ -9,6 +9,7 @@ to type a hash ever again. Run it after adding or changing anything, then commit
 
 Layout:
     blazerrt/channels.json                  the channels, in the order the app shows them
+    blazerrt/thumbnail.jpg                  the picture on the app's BlazerRT page
     blazerrt/<channel>/<build>/info.json    one BlazerRT build, plus its files
     mods/<mod>/info.json                    one mod, plus its files
     tools/<tool>/info.json                  one tool, plus its files
@@ -24,6 +25,7 @@ BRANCH = "main"
 HERE = Path(__file__).resolve().parent
 INDEX = HERE / "index.json"
 EDITIONS = ("release", "preview")  # release = Minecraft from the Store, preview = Minecraft Preview
+IMAGE = "blazerrt/thumbnail.jpg"   # the BlazerRT picture 0x's Manager shows
 GAME = re.compile(r"^\d+\.\d+\.\d+\.\d+$")
 GITHUB_LIMIT = 100 * 1024 * 1024  # GitHub refuses single files over 100 MB
 
@@ -148,10 +150,19 @@ def build_index():
         builds.sort(key=lambda b: (b["date"], b["game"]), reverse=True)
         out_channels.append({"id": cid, "name": ch.get("name", cid), "note": ch.get("note", ""), "builds": builds})
 
-    return {
+    index = {
         "schema": 1,
         "raw": f"https://raw.githubusercontent.com/{REPO}/{BRANCH}/",
         "browse": f"https://github.com/{REPO}/tree/{BRANCH}/",
+    }
+    # The picture on the BlazerRT page. Swap the file to change it; the hash tells the app.
+    picture = HERE / IMAGE
+    if picture.is_file():
+        index["image"] = {"path": IMAGE, "size": picture.stat().st_size, "sha256": sha256(picture)}
+    else:
+        problem(IMAGE, "missing, so the BlazerRT page has no picture")
+    return {
+        **index,
         "channels": out_channels,
         "mods": simple_entries(HERE / "mods", "mod", ("name", "version")),
         "tools": simple_entries(HERE / "tools", "tool", ("name",)),

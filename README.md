@@ -8,6 +8,7 @@ Downloads for BlazerRT, its mods and tools. 0x's Manager reads `index.json` from
 index.json                      what the manager reads. Built by update_index.py, don't edit by hand
 update_index.py                 rebuilds index.json
 blazerrt/channels.json          the channels: Release, Preview, Dev Channel
+blazerrt/thumbnail.jpg          the picture on the manager's BlazerRT page
 blazerrt/<channel>/<build>/     one BlazerRT build per folder
 mods/<mod>/                     mods the manager can install
 tools/<tool>/                   tools, linked from the manager's Tools tab
@@ -26,7 +27,7 @@ The Dev Channel is empty for now. A build goes in `blazerrt/dev/<build>/` the sa
 ## What the manager does with a build
 
 - `data/` goes into the game's `Content` folder, after the files it replaces are backed up.
-- `mods/` goes into `Content\mods`. Mods listed under `replaces` in `info.json` get switched off, so RTXControl and the live settings controller don't both run.
+- `mods/` goes into `Content\mods`. The live settings controller is a folder mod, `mods/BlazerRT Live Settings Controller/`, with its `icon.png` and `manifest.json`, so the manager's Mods page shows its logo and details. That's also the folder the controller keeps `settings.json` and its exported profiles in, so nothing of yours moves. An older loose `BlazerRT Live Settings Controller.dll` gets switched off, so the two can't both load. Mods listed under `replaces` in `info.json` get switched off too, so RTXControl and the controller don't both run.
 - The `.mcpack` files get imported into the game, and the one picked during install is switched on at the top of Global Resources.
 - `WINHTTP.dll` is the mod loader. The manager puts in its own copy, which is the same file.
 - Everything else (`INSTALL.txt`, `CHANGELOG.md`, `licenses/`, `hashes.json`) stays here for people installing by hand.

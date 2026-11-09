@@ -2,6 +2,11 @@
   "schema": 1,
   "raw": "https://raw.githubusercontent.com/Jiyath5516F/BlazerRT-DB/main/",
   "browse": "https://github.com/Jiyath5516F/BlazerRT-DB/tree/main/",
+  "image": {
+    "path": "blazerrt/thumbnail.jpg",
+    "size": 148213,
+    "sha256": "92f35cebad55c920280687ef220f21a474de948d25a7194d93944d3a5952590d"
+  },
   "channels": [
     {
       "id": "release",
@@ -18,7 +23,7 @@
           "path": "blazerrt/release/alpha-0.0.2_1.26.6301.0",
           "packs": [
             {
-              "file": "resource_packs/Support Reource Pack for BlazerRT.mcpack",
+              "file": "resource_packs/Support Resource Pack for BlazerRT.mcpack",
               "label": "Support pack",
               "note": "PBR for every vanilla block, item and mob. Works on its own, no other RTX pack needed.",
               "default": true
@@ -70,8 +75,8 @@
             },
             {
               "path": "hashes.json",
-              "size": 2790,
-              "sha256": "1d5367d9f393a06cddccb70314370b1b1779f1a4fb34f056426783edb40275cf"
+              "size": 3528,
+              "sha256": "176f4d24b19a5e86558ad62a8cc54ef2cb39a17b00a778902b5f0c4e6d2b5ed3"
             },
             {
               "path": "INSTALL.txt",
@@ -99,9 +104,24 @@
               "sha256": "865a658f8e62b3462f0e506f396523630eaef48194ee3c82f7a777027a0112a0"
             },
             {
-              "path": "mods/BlazerRT Live Settings Controller.dll",
+              "path": "mods/BlazerRT Live Settings Controller/BlazerRT Live Settings Controller.dll",
               "size": 1149440,
               "sha256": "9ff3c8c9f984cad7bf8a82b69c479d680f12b458e04e3656958e873a9ee9353b"
+            },
+            {
+              "path": "mods/BlazerRT Live Settings Controller/icon.png",
+              "size": 258908,
+              "sha256": "6f282c7af1322e289febe441cb76a5a2c2663eca9211dc5b82a69b59a1b4dc55"
+            },
+            {
+              "path": "mods/BlazerRT Live Settings Controller/manifest.json",
+              "size": 446,
+              "sha256": "0b5bc643d7d6afec426fa4c1a3b167e4ec8b2a4b945b60abc356813aefeed228"
+            },
+            {
+              "path": "mods/BlazerRT Live Settings Controller/THIRD-PARTY-NOTICES.txt",
+              "size": 11666,
+              "sha256": "b1d658dc719e2bba84afa176e213a5d6ad9674ab13aafb36a56ce2eb240067b7"
             },
             {
               "path": "resource_packs/BlazerRT Rain Off - Use this when Support RP is not used.mcpack",
@@ -109,9 +129,9 @@
               "sha256": "706409f19039d48c6e0fb1a3ffccad17b24d3f0c2593dd0bdb09267861a06c83"
             },
             {
-              "path": "resource_packs/Support Reource Pack for BlazerRT.mcpack",
-              "size": 7028629,
-              "sha256": "dd49053b45bc9d03554b442afb4d6f1608aa741865b0b1c60b6cdc69f9105fbe"
+              "path": "resource_packs/Support Resource Pack for BlazerRT.mcpack",
+              "size": 7010598,
+              "sha256": "1d874171531868b939f811e18144e35eeb67fd9b387fb2e99970648fda077b1e"
             },
             {
               "path": "WINHTTP.dll",
@@ -138,7 +158,7 @@
           "path": "blazerrt/preview/alpha-0.0.2_1.26.7022.0",
           "packs": [
             {
-              "file": "resource_packs/Support Reource Pack for BlazerRT.mcpack",
+              "file": "resource_packs/Support Resource Pack for BlazerRT.mcpack",
               "label": "Support pack",
               "note": "PBR for every vanilla block, item and mob. Works on its own, no other RTX pack needed.",
               "default": true
@@ -185,8 +205,8 @@
             },
             {
               "path": "hashes.json",
-              "size": 2798,
-              "sha256": "179ded9e5cbb9dbdd24fae0bcc740d7992b76ac52b144a16da0952e7bbdec9d8"
+              "size": 3389,
+              "sha256": "ab753e33e127b0913780980c1b0fbdc17471fb60033c5eb24ee734cdb464bc84"
             },
             {
               "path": "INSTALL.txt",
@@ -214,12 +234,22 @@
               "sha256": "865a658f8e62b3462f0e506f396523630eaef48194ee3c82f7a777027a0112a0"
             },
             {
-              "path": "mods/BlazerRT Live Settings Controller.dll",
+              "path": "mods/BlazerRT Live Settings Controller/BlazerRT Live Settings Controller.dll",
               "size": 1149440,
               "sha256": "9ff3c8c9f984cad7bf8a82b69c479d680f12b458e04e3656958e873a9ee9353b"
             },
             {
-              "path": "mods/THIRD-PARTY-NOTICES.txt",
+              "path": "mods/BlazerRT Live Settings Controller/icon.png",
+              "size": 258908,
+              "sha256": "6f282c7af1322e289febe441cb76a5a2c2663eca9211dc5b82a69b59a1b4dc55"
+            },
+            {
+              "path": "mods/BlazerRT Live Settings Controller/manifest.json",
+              "size": 446,
+              "sha256": "0b5bc643d7d6afec426fa4c1a3b167e4ec8b2a4b945b60abc356813aefeed228"
+            },
+            {
+              "path": "mods/BlazerRT Live Settings Controller/THIRD-PARTY-NOTICES.txt",
               "size": 11666,
               "sha256": "b1d658dc719e2bba84afa176e213a5d6ad9674ab13aafb36a56ce2eb240067b7"
             },
@@ -229,9 +259,9 @@
               "sha256": "706409f19039d48c6e0fb1a3ffccad17b24d3f0c2593dd0bdb09267861a06c83"
             },
             {
-              "path": "resource_packs/Support Reource Pack for BlazerRT.mcpack",
-              "size": 7028629,
-              "sha256": "dd49053b45bc9d03554b442afb4d6f1608aa741865b0b1c60b6cdc69f9105fbe"
+              "path": "resource_packs/Support Resource Pack for BlazerRT.mcpack",
+              "size": 7010598,
+              "sha256": "1d874171531868b939f811e18144e35eeb67fd9b387fb2e99970648fda077b1e"
             },
             {
               "path": "WINHTTP.dll",
@@ -254,7 +284,7 @@
       "id": "blazerrt-live-settings-controller",
       "name": "BlazerRT Live Settings Controller",
       "version": "alpha 0.0.2",
-      "author": "0x",
+      "author": "0x4A4B",
       "description": "The F6 settings panel for BlazerRT. 233 live settings, presets from Potato to Cinematic, saved profiles. Takes over from RTXControl and brings its settings along.",
       "editions": [
         "release",
@@ -264,7 +294,7 @@
         "1.26.6301.0",
         "1.26.7022.0"
       ],
-      "install": "loose",
+      "install": "folder",
       "replaces": [
         "RTXControl"
       ],
@@ -274,6 +304,16 @@
           "path": "BlazerRT Live Settings Controller.dll",
           "size": 1149440,
           "sha256": "9ff3c8c9f984cad7bf8a82b69c479d680f12b458e04e3656958e873a9ee9353b"
+        },
+        {
+          "path": "icon.png",
+          "size": 258908,
+          "sha256": "6f282c7af1322e289febe441cb76a5a2c2663eca9211dc5b82a69b59a1b4dc55"
+        },
+        {
+          "path": "manifest.json",
+          "size": 446,
+          "sha256": "0b5bc643d7d6afec426fa4c1a3b167e4ec8b2a4b945b60abc356813aefeed228"
         },
         {
           "path": "THIRD-PARTY-NOTICES.txt",
