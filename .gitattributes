@@ -1,0 +1,3 @@
+# Store every file exactly as it is. index.json has a SHA-256 for each one, and a
+# line-ending conversion on the way in would make those hashes lie.
+* -text
