@@ -19,7 +19,7 @@ Every build, mod and tool folder has an `info.json` with the stuff a person has 
 ## Adding a BlazerRT build
 
 1. Make a folder like `blazerrt/release/alpha-0.0.3_1.26.6401.0/` and put the package in it, same layout as the others: `data/`, `mods/`, `resource_packs/`, `INSTALL.txt` and so on.
-2. Copy an `info.json` from another build and change it. `edition` is `release` for Minecraft or `preview` for Minecraft Preview, and `game` is the exact version it was built for. The manager won't install a build on any other version.
+2. Copy an `info.json` from another build and change it. `edition` is `release` for Minecraft or `preview` for Minecraft Preview, and `game` is the exact version it was built for. On any other version the manager asks first, and if the game's shader format differs from the build's, it converts the shaders with Lazurite before installing. `update_index.py` reads the format out of the build's `.material.bin` files and puts it in `index.json`, so there's nothing to fill in for that.
 3. Run `python update_index.py`, then commit and push.
 
 The Dev Channel is empty for now. A build goes in `blazerrt/dev/<build>/` the same way.
