@@ -77,7 +77,7 @@
             {
               "path": "hashes.json",
               "size": 3528,
-              "sha256": "143edf7bb15849afd1a047eddb897176ec7acf281bb050a4cb11744e6a93632f"
+              "sha256": "f9941623fe63f7d08aa14156e3da9071b9656727ad98458a7cee6c5558d30fd6"
             },
             {
               "path": "INSTALL.txt",
@@ -131,8 +131,8 @@
             },
             {
               "path": "resource_packs/Support Resource Pack for BlazerRT.mcpack",
-              "size": 7010598,
-              "sha256": "1d874171531868b939f811e18144e35eeb67fd9b387fb2e99970648fda077b1e"
+              "size": 7304914,
+              "sha256": "febd943dcd43afe9d5b3c39639ca771961e7d20630ac7792662ec3518c563fef"
             },
             {
               "path": "WINHTTP.dll",
@@ -208,7 +208,7 @@
             {
               "path": "hashes.json",
               "size": 3389,
-              "sha256": "ab753e33e127b0913780980c1b0fbdc17471fb60033c5eb24ee734cdb464bc84"
+              "sha256": "88dafcd2a1cab7e7c67e8ab92789f059714467f2a75f63ecc3020d8d34d82d51"
             },
             {
               "path": "INSTALL.txt",
@@ -262,8 +262,8 @@
             },
             {
               "path": "resource_packs/Support Resource Pack for BlazerRT.mcpack",
-              "size": 7010598,
-              "sha256": "1d874171531868b939f811e18144e35eeb67fd9b387fb2e99970648fda077b1e"
+              "size": 7304914,
+              "sha256": "febd943dcd43afe9d5b3c39639ca771961e7d20630ac7792662ec3518c563fef"
             },
             {
               "path": "WINHTTP.dll",
