@@ -11,7 +11,7 @@
     "1.26.6301.0",
     "1.26.7022.0"
   ],
-  "install": "folder",
+  "install": "loose",
   "replaces": [
     "RTXControl"
   ]

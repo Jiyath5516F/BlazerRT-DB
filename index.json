@@ -76,8 +76,8 @@
             },
             {
               "path": "hashes.json",
-              "size": 3528,
-              "sha256": "f9941623fe63f7d08aa14156e3da9071b9656727ad98458a7cee6c5558d30fd6"
+              "size": 3494,
+              "sha256": "9a3ea167cc4e2644c7d6dfa5ad2742c5c841897815f8030cbb572f7bd60d0e77"
             },
             {
               "path": "INSTALL.txt",
@@ -105,7 +105,7 @@
               "sha256": "865a658f8e62b3462f0e506f396523630eaef48194ee3c82f7a777027a0112a0"
             },
             {
-              "path": "mods/BlazerRT Live Settings Controller/BlazerRT Live Settings Controller.dll",
+              "path": "mods/BlazerRT Live Settings Controller.dll",
               "size": 1149440,
               "sha256": "9ff3c8c9f984cad7bf8a82b69c479d680f12b458e04e3656958e873a9ee9353b"
             },
@@ -207,8 +207,8 @@
             },
             {
               "path": "hashes.json",
-              "size": 3389,
-              "sha256": "88dafcd2a1cab7e7c67e8ab92789f059714467f2a75f63ecc3020d8d34d82d51"
+              "size": 3355,
+              "sha256": "e8769554d3f0f4e3ec3a5df4d21cbb326f622e6c65c957fb4b9a5860cac01280"
             },
             {
               "path": "INSTALL.txt",
@@ -236,7 +236,7 @@
               "sha256": "865a658f8e62b3462f0e506f396523630eaef48194ee3c82f7a777027a0112a0"
             },
             {
-              "path": "mods/BlazerRT Live Settings Controller/BlazerRT Live Settings Controller.dll",
+              "path": "mods/BlazerRT Live Settings Controller.dll",
               "size": 1149440,
               "sha256": "9ff3c8c9f984cad7bf8a82b69c479d680f12b458e04e3656958e873a9ee9353b"
             },
@@ -296,7 +296,7 @@
         "1.26.6301.0",
         "1.26.7022.0"
       ],
-      "install": "folder",
+      "install": "loose",
       "replaces": [
         "RTXControl"
       ],
@@ -308,17 +308,17 @@
           "sha256": "9ff3c8c9f984cad7bf8a82b69c479d680f12b458e04e3656958e873a9ee9353b"
         },
         {
-          "path": "icon.png",
+          "path": "BlazerRT Live Settings Controller/icon.png",
           "size": 258908,
           "sha256": "6f282c7af1322e289febe441cb76a5a2c2663eca9211dc5b82a69b59a1b4dc55"
         },
         {
-          "path": "manifest.json",
+          "path": "BlazerRT Live Settings Controller/manifest.json",
           "size": 446,
           "sha256": "0b5bc643d7d6afec426fa4c1a3b167e4ec8b2a4b945b60abc356813aefeed228"
         },
         {
-          "path": "THIRD-PARTY-NOTICES.txt",
+          "path": "BlazerRT Live Settings Controller/THIRD-PARTY-NOTICES.txt",
           "size": 11666,
           "sha256": "b1d658dc719e2bba84afa176e213a5d6ad9674ab13aafb36a56ce2eb240067b7"
         }
