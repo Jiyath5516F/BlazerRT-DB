@@ -341,6 +341,11 @@
           "sha256": "006baefb13fe651c5df90bd995d88748565466463d5af48ff3867be34ff67653"
         },
         {
+          "path": "blazerbake_tutorial.mp4",
+          "size": 25881919,
+          "sha256": "c3f4b0a04664b49bee6edf12e6d9e680f2181ee75ca99993fa07ac81fa7597ae"
+        },
+        {
           "path": "CHANGELOG.md",
           "size": 1134,
           "sha256": "3ebb5c1dffa05355c54c7343c7f24059f73b931443136b56fff866ea197cb860"
